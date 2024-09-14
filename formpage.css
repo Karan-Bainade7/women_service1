@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f2ff; /* Light blue background */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevents body from scrolling */
+}
+
+.container {
+    text-align: center;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 800px; /* Increased max width */
+    background-color: white;
+    border: 2px solid rgba(255, 102, 153, 0.8); /* Light pink border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Allows scrolling */
+    max-height: 90vh; /* Ensures form does not exceed screen height */
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid rgba(255, 102, 153, 0.5); /* Light pink border */
+}
+
+.form-row:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-size: 16px; /* Adjusted font size */
+    color: #333;
+    width: 35%; /* Adjusted width for better layout */
+    text-align: left;
+}
+
+.value {
+    font-size: 16px; /* Adjusted font size */
+    color: #333;
+    width: 60%; /* Adjusted width for better layout */
+}
+
+.input-field {
+    width: 60%; /* Adjusted width for better layout */
+    padding: 8px; /* Increased padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button {
+    background-color:  #e0306b; /* Light pink button */
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: rgb(232, 95, 141); /* Darker pink on hover */
+}
